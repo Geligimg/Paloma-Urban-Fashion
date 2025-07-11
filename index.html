@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Cargo las fuentes que quiero usar en mi web -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <!-- Enlazo mi hoja de estilos personalizada -->
+    <link rel="stylesheet" href="css/pufestilos.css" />
+    <!-- Favicon para la pestaña del navegador -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <title>PUF | Paloma Urban Fashion</title>
+  </head>
+  <body>
+    <!-- Header principal: aquí coloco el logo y el menú de navegación -->
+   <header class="header-principal">
+  <div class="nav-contenedor">
+    <a href="index.html" class="logo">
+      <img src="images/PUF (1).png" alt="Logo PUF" />
+    </a>
+    <nav aria-label="Menú principal">
+      <ul class="nav-enlaces">
+        <li><a href="pages/productos.html">Tienda</a></li>
+        <li><a href="#coleccion">Colección 2K25</a></li>
+        <li><a href="#filosofia">Filosofía</a></li>
+        <li><a href="#sobre-puf">Sobre PUF</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#donde-estamos">Dónde estamos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <!-- Marquee animado para dar dinamismo a la web -->
+    <div class="marquee" aria-hidden="true">
+      <span># FASHION | # VANGUARDIA | # BRAT SUMMER NEXT COLLECTION | # ON POINT IN MOUTH</span>
+    </div>
+
+    <main>
+      <div class="container">
+        <!-- Hero principal: uso un vídeo de fondo y un overlay para destacar el texto -->
+        <section class="hero" id="hero" aria-label="Presentación principal">
+          <video autoplay muted loop playsinline class="hero-video">
+            <source src="video/pufvideo.mp4" type="video/mp4" />
+            Tu navegador no soporta el video.
+          </video>
+          <div class="hero-overlay"></div>
+          <div class="hero-contenido">
+            <h1>P U F</h1>
+            <p id="hero-parrafo">Paloma Urban Fashion</p>
+            <a href="pages/productos.html" class="cta">Explora nuestra colección</a>
+          </div>
+        </section>
+
+        <!-- Repito el marquee para mantener el ritmo visual -->
+        <div class="marquee" aria-hidden="true">
+          <span># FASHION | # VANGUARDIA | # BRAT SUMMER NEXT COLLECTION | # ON POINT IN MOUTH</span>
+        </div>
+
+        <!-- Sección colección: presento la colección y muestro una imagen destacada -->
+        <section class="coleccion" id="coleccion" aria-labelledby="coleccion-title">
+          <h2 id="coleccion-title">Colección 2K25 Cibeles Madrid</h2>
+          <p>En PUF lo volvemos a hacer: presentamos la Colección 2K25 en Cibeles Madrid, donde la moda urbana se da la mano con la alta costura — como si fuera lo más natural del mundo.</p>
+          <img src="images/coleccion.jpg" alt="Bastidores de la colección 2K25" class="coleccion-imagen" />
+          <p>Inspirada en el ritmo frenético de la ciudad y en la necesidad de vestir con conciencia, esta colección apuesta por piezas sostenibles, sin renunciar al estilo que (francamente) no pasa desapercibido.</p>
+          <img src="images/pu"
+          <p>Desde chaquetas que hablan por sí solas hasta accesorios que elevan cualquier look, cada diseño está pensado para dejar huella... como debe ser.</p>
+        </section>
+
+        <!-- Sección presentación: cuento la historia y valores de la marca -->
+        <section class="presentacion-paloma" id="sobre-puf" aria-labelledby="presentacion-title">
+          <div class="paloma-contenido">
+            <h2 id="presentacion-title">Paloma Urban Fashion</h2>
+            <p>Paloma Urban Fashion es una declaración. Una visión de la moda donde la estética urbana se encuentra con la vanguardia, y donde cada prenda es una extensión del carácter.</p>
+            <p>Nacemos de la necesidad de romper moldes, de redefinir el streetwear con una mirada contemporánea, atrevida y elegante. Nuestra inspiración proviene del pulso de la ciudad, de la fuerza de lo femenino, y de una generación que no teme destacar.</p>
+            <p>Diseño para quienes entienden que el estilo es una actitud. Para quienes ven la ropa como lenguaje, identidad y poder. En cada colección, busco capturar la esencia de una era y un lugar, transformándolos en piezas únicas que cuentan una historia.</p>
+            <p>Únete a mí en este viaje donde la moda se convierte en una experiencia, y donde cada prenda tiene el poder de transformar no solo tu look, sino también tu perspectiva.</p>
+          </div>
+          <div class="paloma-foto">
+            <img src="images/palomaanosotros.png" alt="Paloma Urban Fashion" class="paloma-imagen" />
+          </div>
+        </section>
+
+        <!-- Sección filosofía: explico los valores y muestro tarjetas flip -->
+        <section class="filosofia" id="filosofia" aria-labelledby="filosofia-title">
+          <h2 id="filosofia-title">Nuestra Filosofía</h2>
+          <p>En PUF, creo que la moda es una forma de expresión personal y cultural. Mi filosofía se basa en la autenticidad, la creatividad y el respeto por el medio ambiente.</p>
+          <p>Me esfuerzo por crear prendas que no solo sean estéticamente atractivas, sino también sostenibles y responsables con el planeta.</p>
+          <div class="tarjetas-mision-vision-valores">
+            <article class="tarjeta-giro" tabindex="0" aria-label="Misión">
+              <div class="tarjeta-giro-interior">
+                <div class="tarjeta-giro-frente"><h3>Misión</h3></div>
+                <div class="tarjeta-giro-dorso"><p id="mision-parrafo">Inspirar y empoderar a las personas a través de la moda urbana, fusionando estilo, sostenibilidad y autenticidad en cada prenda.</p></div>
+              </div>
+            </article>
+            <article class="tarjeta-giro" tabindex="0" aria-label="Visión">
+              <div class="tarjeta-giro-interior">
+                <div class="tarjeta-giro-frente"><h3>Visión</h3></div>
+                <div class="tarjeta-giro-dorso"><p id="vision-parrafo">Ser referentes en moda urbana consciente, liderando el cambio hacia una industria más ética, creativa y responsable con el entorno.</p></div>
+              </div>
+            </article>
+            <article class="tarjeta-giro" tabindex="0" aria-label="Valores">
+              <div class="tarjeta-giro-interior">
+                <div class="tarjeta-giro-frente"><h3>Valores</h3></div>
+                <div class="tarjeta-giro-dorso">
+                  <ul>
+                    <li>Autenticidad</li>
+                    <li>Creatividad</li>
+                    <li>Sostenibilidad</li>
+                    <li>Innovación</li>
+                    <li>Respeto</li>
+                    <li>Compromiso social</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Sección contacto: formulario simple y accesible -->
+        <section class="contacto" id="contacto" aria-labelledby="contacto-title">
+          <h2 id="contacto-title">Contacto</h2>
+          <form>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Introduce tu número de teléfono" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Introduce tu mail" required />
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+
+        <!-- Sección ubicación: muestro la dirección y el mapa de la tienda -->
+        <section class="donde-estamos" id="donde-estamos" aria-labelledby="ubicacion-title">
+          <h2 id="ubicacion-title">¿Dónde estamos?</h2>
+          <p>Visítanos en nuestra tienda física en Calle Desengaño 21, donde puedes explorar nuestras últimas colecciones y disfrutar de una experiencia de compra única.</p>
+          <p>Horario: Lunes a Sábado, 10:00 - 20:00</p>
+          <div class="mapa-tienda" style="margin: 2rem 0">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.847054191847!2d-3.703790284593582!3d40.41677597936357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42288b4a4f4a2f%3A0x7c8e4f4a4f4a2f!2sCalle%20Desenga%C3%B1o%2021%2C%20Madrid%2C%20Spain!5e0!3m2!1sen!2sus!4v1616161616161!5m2!1sen!2sus" width="600" height="450" style="border:0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer sencillo con derechos de autor -->
+    <footer class="footer">
+      <p>© 2024 PUF. Todos los derechos reservados.</p>
+      <p>Diseñado por Paloma Urban Fashion</p>
+    </footer>
+
+    <!-- Enlazo mi script JS si lo necesito -->
+    <script src="js/pufscript.js"></script>
+  </body>
+</html>

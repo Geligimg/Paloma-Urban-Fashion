@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Cargo las fuentes que uso en mi web -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Enlazo mi CSS personalizado -->
+    <link rel="stylesheet" href="../css/pufestilos.css" />
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <title>PUF | Productos</title>
+  </head>
+  <body>
+    <!-- Header con logo y menú principal -->
+    <header class="header-principal">
+      <div class="nav-contenedor">
+        <a href="../index.html" class="logo">
+          <img src="../images/PUF (1).png" alt="Logo PUF" />
+        </a>
+        <nav aria-label="Menú principal">
+          <ul class="nav-enlaces">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../index.html#coleccion">Colección 2K25</a></li>
+            <li><a href="../index.html#filosofia">Filosofía</a></li>
+            <li><a href="../index.html#sobre-puf">Sobre PUF</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="../index.html#donde-estamos">Dónde estamos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Marquee animado para dar dinamismo a la tienda -->
+    <div class="marquee" aria-hidden="true">
+      <span
+        ># FASHION | # VANGUARDIA | # BRAT SUMMER NEXT COLLECTION | # ON POINT
+        IN MOUTH</span
+      >
+    </div>
+
+    <main>
+      <div class="container">
+        <!-- Hero visual para la sección productos -->
+        <section class="hero" id="hero" aria-label="Presentación principal">
+          <div class="hero-overlay"></div>
+          <div class="hero-contenido">
+            <h1>P U F I S M O</h1>
+            <p id="hero-parrafo">R#b3li0n</p>
+          </div>
+        </section>
+
+        <!-- Sección pasarela: presento el espíritu de la marca y muestro un vídeo -->
+        <section class="pasarela-section">
+          <div class="pasarela-texto">
+            <h1 class="pasarela-titulo">Nuestra pasarela</h1>
+            <p>
+              Paloma Urban Fashion redefine la moda urbana con una visión fresca
+              y atrevida. Inspirados por la autenticidad y el desenfado de la
+              cultura pop española, llevamos la pasarela a las calles,
+              fusionando vanguardia y nostalgia.
+            </p>
+            <p>
+              Nuestro desfile más icónico es donde la moda y el humor se mezclan
+              en un espectáculo inolvidable. Revive ese momento en el siguiente
+              video y descubre cómo Paloma Urban Fashion transforma lo cotidiano
+              en tendencia.
+            </p>
+          </div>
+          <div class="pasarela-video">
+            <video
+              src="../video/puf2.mp4"
+              autoplay
+              muted
+              playsinline
+              controls
+              width="500"
+              height="400"
+            >
+              Tu navegador no soporta la etiqueta de video.
+            </video>
+          </div>
+        </section>
+
+        <!-- Catálogo de productos: muestro cada producto con su imagen, nombre, precio y botón -->
+        <section
+          class="productos"
+          id="productos"
+          aria-labelledby="productos-title"
+        >
+          <h2
+            id="productos-title"
+            style="
+              font-family: 'Bebas Neue', sans-serif;
+              font-size: 2.5rem;
+              margin-bottom: 2rem;
+              text-align: center;
+            "
+          >
+            Catálogo de Productos
+          </h2>
+          <div class="productos-grid">
+            <!-- Producto 1 -->
+            <div class="producto">
+              <img
+                src="../images/marisa1.png"
+                alt="Cazadora Oversize"
+                class="producto-imagen"
+              />
+              <div class="producto-detalles">
+                <h3 class="producto-titulo">Cazadora Oversize</h3>
+                <p class="producto-precio">79,90 €</p>
+                <button class="producto-agregar">Agregar al carrito</button>
+              </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="producto">
+              <img
+                src="../images/pija1.png"
+                alt="Blusa Kimonay2K"
+                class="producto-imagen"
+              />
+              <div class="producto-detalles">
+                <h3 class="producto-titulo">Blusa Kimonay2K</h3>
+                <p class="producto-precio">59,90 €</p>
+                <button class="producto-agregar">Agregar al carrito</button>
+              </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="producto">
+              <img
+                src="../images/mariano1.png"
+                alt="Elesuit"
+                class="producto-imagen"
+              />
+              <div class="producto-detalles">
+                <h3 class="producto-titulo">Elesuit</h3>
+                <p class="producto-precio">69,90 €</p>
+                <button class="producto-agregar">Agregar al carrito</button>
+              </div>
+            </div>
+            <!-- Producto 4 -->
+            <div class="producto">
+              <img
+                src="../images/belen1.png"
+                alt="Modo Urban"
+                class="producto-imagen"
+              />
+              <div class="producto-detalles">
+                <h3 class="producto-titulo">Modo Urban</h3>
+                <p class="producto-precio">39,90 €</p>
+                <button class="producto-agregar">Agregar al carrito</button>
+              </div>
+            </div>
+            <!-- Producto 5 -->
+            <div class="producto">
+              <img
+                src="../images/hierbas1.png"
+                alt="Bohopuf"
+                class="producto-imagen"
+              />
+              <div class="producto-detalles">
+                <h3 class="producto-titulo">Bohopuf</h3>
+                <p class="producto-precio">39,90 €</p>
+                <button class="producto-agregar">Agregar al carrito</button>
+              </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="producto">
+              <img
+                src="../images/vicenta1.png"
+                alt="Traje"
+                class="producto-imagen"
+              />
+              <div class="producto-detalles">
+                <h3 class="producto-titulo">Traje</h3>
+                <p class="producto-precio">39,90 €</p>
+                <button class="producto-agregar">Agregar al carrito</button>
+              </div>
+            </div>
+            <!-- Producto 7 -->
+            <div class="producto">
+              <img
+                src="../images/marianocamiseta.png"
+                alt="Camiseta"
+                class="producto-imagen"
+              />
+              <div class="producto-detalles">
+                <h3 class="producto-titulo">Camiseta Br4sil</h3>
+                <p class="producto-precio">39,90 €</p>
+                <button class="producto-agregar">Agregar al carrito</button>
+              </div>
+            </div>
+            <!-- Producto especial -->
+            <div class="producto especial-p">
+              <img
+                src="../images/totedarkpuf.png"
+                alt="totedarkpuf"
+                class="producto-imagen"
+              />
+              <div class="producto-detalles">
+                <h3 class="producto-titulo">Tote Darkpuf</h3>
+                <p class="producto-precio">39,90 €</p>
+                <button class="producto-agregar">Agregar al carrito</button>
+              </div>
+            </div>
+            <!-- Logo especial a la derecha -->
+            <div class="producto logo-p">
+              <img
+                src="../images/pufdiabla.png"
+                alt="Letra P PUF"
+                class="logo-p-imagen"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección contacto: formulario claro y accesible para clientes -->
+        <section
+          class="contacto"
+          id="contacto"
+          aria-labelledby="contacto-title"
+        >
+          <h2 id="contacto-title">Contacto</h2>
+          <form>
+            <label for="telefono">Teléfono:</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="Introduce tu número de teléfono"
+              required
+            />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Introduce tu mail"
+              required
+            />
+            <label for="mensaje">Mensaje:</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              placeholder="Escribe tu mensaje aquí..."
+              required
+            ></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer sencillo con derechos de autor y crédito -->
+    <footer class="footer">
+      <p>© 2024 PUF. Todos los derechos reservados.</p>
+      <p>Diseñado por Paloma Urban Fashion</p>
+    </footer>
+  </body>
+</html>
