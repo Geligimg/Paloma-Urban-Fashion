@@ -11,10 +11,16 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 1.6;
+  font-weight: lighter;
   background: #fff;
   color: #111;
   font-size: 1rem;
+  line-height: 1.5;
+}
+
+h2,
+h3 {
+  font-family: "Bebas Neue", sans-serif;
 }
 
 /* Centro y limito el ancho del contenido principal */
@@ -228,6 +234,27 @@ body {
   margin-bottom: 1rem;
   color: #101010;
 }
+/* galeria de la coleccion  */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.galeria-item {
+  width: 100%;
+  height: 300px; /* altura fija para igualar tamaño */
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+
+.galeria-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
 /* Tarjetas flip para misión, visión y valores */
 .tarjetas-mision-vision-valores {
@@ -297,6 +324,31 @@ body {
   text-align: center;
 }
 
+.filosofia-imagen {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-ancho {
+  width: 100%;
+  height: auto; /* mantiene proporción */
+  display: block;
+  object-fit: cover; /* cubre el espacio manteniendo proporción, recortando si es necesario */
+}
+
+.oculto-visually {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
 /* Presentación Paloma: uso flex para alinear texto e imagen */
 .presentacion-paloma {
   display: flex;
@@ -347,6 +399,7 @@ body {
 }
 
 /* Formulario de contacto */
+
 .contacto form {
   max-width: 600px;
   margin: 0 auto;
@@ -454,20 +507,6 @@ section.donde-estamos {
 }
 .producto-precio {
   font-family: "Doto", sans-serif;
-  color: red;
-}
-.producto-agregar {
-  background: transparent;
-  border: 1px solid #000;
-  padding: 0.5rem 1.2rem;
-  font-family: "Doto", sans-serif;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.producto-agregar:hover {
-  background: #000;
-  color: #fff;
 }
 
 /* Sección pasarela: flex para texto y video */
@@ -552,64 +591,85 @@ section.donde-estamos {
   }
 }
 
-/* Menú vertical en móvil */
-@media (max-width: 700px) {
-  .header-principal {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem 0;
-  }
-  .nav-enlaces {
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-    margin-top: 1rem;
-    align-items: flex-start;
-  }
-  .header-principal img {
-    height: 48px;
-  }
+/* Media Queries Responsivas */
+
+/* Ajustes en tablets grandes y pantallas medianas */
+@media (max-width: 1024px) {
   .hero-contenido {
-    font-size: 1.3rem;
+    font-size: 2rem;
+  }
+
+  .cta {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.8rem;
+  }
+
+  .galeria-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .pasarela-titulo {
+    font-size: 2rem;
   }
 }
 
-/* Ajusto hero y fuentes en pantallas muy pequeñas */
-@media (max-width: 600px) {
-  .hero {
-    min-height: 40vh;
-    border-radius: 0;
-  }
+/* Ajustes adicionales en tablets y móviles grandes */
+@media (max-width: 768px) {
   .hero-contenido {
-    font-size: 1.1rem;
-    padding: 0 1rem;
+    font-size: 1.5rem;
   }
-  .cta {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
+
+  .hero {
+    min-height: 50vh;
   }
+
+  .producto {
+    min-width: 180px;
+    max-width: 180px;
+  }
+
+  .producto-imagen {
+    height: 240px;
+  }
+
+  .producto-titulo {
+    font-size: 1.3rem;
+  }
+
   .coleccion h2,
   .filosofia h2 {
-    font-size: 1.3rem;
-  }
-  main > section,
-  section.contacto,
-  section.donde-estamos {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-  }
-  .mapa-tienda iframe {
-    height: 220px;
+    font-size: 1.5rem;
   }
 }
 
-/* Tarjetas flip y formulario más pequeños en móvil */
-@media (max-width: 500px) {
-  .tarjeta-giro {
-    width: 90vw;
-    height: 180px;
+
+
+/* Ajustes para móviles pequeños */
+@media (max-width: 425px) {
+  .hero-contenido {
+    font-size: 1rem;
   }
-  .contacto form {
-    padding: 1rem;
+
+  .cta {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .galeria-item {
+    height: 220px;
+  }
+
+  .tarjeta-giro {
+    height: 160px;
+  }
+
+  .producto {
+    min-width: 150px;
+    max-width: 150px;
+  }
+
+  .producto-imagen {
+    height: 200px;
   }
 }
+
