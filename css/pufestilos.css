@@ -1,4 +1,5 @@
 /* Hago un reset global para evitar márgenes y paddings inesperados */
+/* Para asegurarme de que todos los elementos y pseudo-elementos comiencen sin márgenes ni rellenos inesperados, aplico un reset global: */
 *,
 *::before,
 *::after {
@@ -495,7 +496,7 @@ section.donde-estamos {
 .producto-imagen {
   width: 100%;
   height: 300px; 
-  object-fit: cover; /* para que la imagen se recorte y no se deforme */
+  object-fit: cover; 
   display: block;
 }
 .producto-titulo {
@@ -672,3 +673,4 @@ section.donde-estamos {
     height: 200px;
   }
 }
+
