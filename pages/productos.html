@@ -1,194 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- Fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
-  
-  <!-- CSS personalizado -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Cargo las fuentes que uso para mantener el estilo -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+<!-- Enlazo mi CSS personalizado -->
   <link rel="stylesheet" href="../css/pufestilos.css" />
-  <link rel="icon" type="image/png" href="../images/favicon.png" />
-  
-  <title>PUF | Productos</title>
+   <link rel="icon" type="image/png" href="../images/favicon.png" />
+<title>PUF | Productos</title>
 </head>
-
 <body>
-  <!-- Header -->
-  <header class="header-principal">
-    <div class="nav-contenedor">
-      <a href="../index.html" class="logo">
-        <img src="../images/PUF (1).png" alt="Logo PUF" />
-      </a>
-      <nav>
-        <ul class="nav-enlaces">
-          <li><a href="../index.html">HOME</a></li>
-          <li><a href="../index.html#coleccion">Colección 2K25</a></li>
-          <li><a href="../index.html#filosofia">Filosofía</a></li>
-          <li><a href="../index.html#sobre-puf">Sobre PUF</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li><a href="../index.html#donde-estamos">Dónde estamos</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Marquee -->
-  <div class="marquee" aria-hidden="true">
-    <span># FASHION | # VANGUARDIA | # BRAT SUMMER NEXT COLLECTION | # ON POINT IN MOUTH</span>
-  </div>
-
-  <main>
-    <div class="container">
-      
-      <!-- Hero -->
-      <section class="hero" id="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-contenido">
-          <h1>P U F I S M O</h1>
-          <p id="hero-parrafo">R#b3li0n</p>
-        </div>
-      </section>
-
-      <!-- Pasarela -->
-      <section class="pasarela-section">
-        <div class="pasarela-texto">
-          <h1 class="pasarela-titulo">Nuestra pasarela</h1>
-          <p>Paloma Urban Fashion redefine la moda urbana con una visión fresca y atrevida. Inspirados por la autenticidad y el desenfado de la cultura pop española, llevamos la pasarela a las calles, fusionando vanguardia y nostalgia.</p>
-          <p>Nuestro desfile más icónico es donde la moda y el humor se mezclan en un espectáculo inolvidable. Revive ese momento en el siguiente video y descubre cómo Paloma Urban Fashion transforma lo cotidiano en tendencia.</p>
-        </div>
-        <div class="pasarela-video">
-          <video src="../video/puf2.mp4" autoplay muted playsinline controls width="500" height="400">
-            Tu navegador no soporta la etiqueta de video.
-          </video>
-        </div>
-      </section>
-
-      <!-- Catálogo de productos -->
-      <section class="productos" id="productos">
-        <h2 class="productos-titulo">Catálogo de Productos</h2>
-        <p class="productos-subtitulo">Reserva ahora y te lo ponemos a tu medida</p>
-
-        <div class="productos-grid">
-
-          <div class="producto">
-            <img src="../images/marisa1.png" alt="Cazadora Oversize" class="producto-imagen" />
-            <div class="producto-detalles">
-              <h3 class="producto-titulo">Cazadora Oversize</h3>
-              <p class="producto-precio">79,90 €</p>
-              <p class="producto-codigo">#REF001</p>
-            </div>
-          </div>
-
-          <div class="producto">
-            <img src="../images/pija1.png" alt="Blusa Kimonay2K" class="producto-imagen" />
-            <div class="producto-detalles">
-              <h3 class="producto-titulo">Blusa Kimonay2K</h3>
-              <p class="producto-precio">59,90 €</p>
-              <p class="producto-codigo">#REF002</p>
-            </div>
-          </div>
-
-          <div class="producto">
-            <img src="../images/mariano1.png" alt="Elesuit" class="producto-imagen" />
-            <div class="producto-detalles">
-              <h3 class="producto-titulo">Elesuit</h3>
-              <p class="producto-precio">69,90 €</p>
-              <p class="producto-codigo">#REF003</p>
-            </div>
-          </div>
-
-          <div class="producto">
-            <img src="../images/belen1.png" alt="Modo Urban" class="producto-imagen" />
-            <div class="producto-detalles">
-              <h3 class="producto-titulo">Modo Urban</h3>
-              <p class="producto-precio">39,90 €</p>
-              <p class="producto-codigo">#REF004</p>
-            </div>
-          </div>
-
-          <div class="producto">
-            <img src="../images/hierbas1.png" alt="Bohopuf" class="producto-imagen" />
-            <div class="producto-detalles">
-              <h3 class="producto-titulo">Bohopuf</h3>
-              <p class="producto-precio">39,90 €</p>
-              <p class="producto-codigo">#REF005</p>
-            </div>
-          </div>
-
-          <div class="producto">
-            <img src="../images/vicenta1.png" alt="Traje" class="producto-imagen" />
-            <div class="producto-detalles">
-              <h3 class="producto-titulo">Traje</h3>
-              <p class="producto-precio">39,90 €</p>
-              <p class="producto-codigo">#REF006</p>
-            </div>
-          </div>
-
-          <div class="producto">
-            <img src="../images/marianocamiseta.png" alt="Camiseta Br4sil" class="producto-imagen" />
-            <div class="producto-detalles">
-              <h3 class="producto-titulo">Camiseta Br4sil</h3>
-              <p class="producto-precio">39,90 €</p>
-              <p class="producto-codigo">#REF007</p>
-            </div>
-          </div>
-
-          <div class="producto especial-p">
-            <img src="../images/totedarkpuf.png" alt="Tote Darkpuf" class="producto-imagen" />
-            <div class="producto-detalles">
-              <h3 class="producto-titulo">Tote Darkpuf</h3>
-              <p class="producto-precio">39,90 €</p>
-              <p class="producto-codigo">#REF008</p>
-            </div>
-          </div>
-
-          <div class="producto logo-p">
-            <img src="../images/pufdiabla.png" alt="Letra P PUF" class="logo-p-imagen" />
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Contacto -->
-      <section class="contacto" id="contacto">
-        <h2>Contacto</h2>
-        <p>Reserva tu prenda favorita de la colección y nos pondremos en contacto contigo y vive el PUF en tu vida, con asesoría de imagen incluida en colaboración con la asesora Ángela Orcera.</p>
-
-        <form>
-          <label for="telefono">Teléfono:</label>
-          <input type="tel" id="telefono" name="telefono" placeholder="Introduce tu número de teléfono" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="Introduce tu mail" required />
-
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" placeholder="Escribe referencia favorita para reservar y pedir cita..." required></textarea>
-
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-
-    </div>
-  </main>
-
-  <!-- Script -->
-  <script src="js/pufscript.js"></script>
+<!-- Header con logo y menú principal -->
+<header class="header-principal">
+<div class="nav-contenedor">
+<a href="../index.html" class="logo">
+<img src="../images/PUF (1).png" alt="Logo PUF" />
+</a>
+<nav>
+<ul class="nav-enlaces">
+<li><a href="../index.html">HOME</a></li>
+<li><a href="../index.html#coleccion">Colección 2K25</a></li>
+<li><a href="../index.html#filosofia">Filosofía</a></li>
+<li><a href="../index.html#sobre-puf">Sobre PUF</a></li>
+<li><a href="#contacto">Contacto</a></li>
+<li><a href="../index.html#donde-estamos">Dónde estamos</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<!-- Marquee animado para dar dinamismo -->
+<div class="marquee" aria-hidden="true">
+<span># FASHION | # VANGUARDIA | # BRAT SUMMER NEXT COLLECTION | # ON POINT IN MOUTH</span>
+</div>
+<main>
+<div class="container">
+<!-- Hero visual de presentación -->
+<section class="hero" id="hero">
+<div class="hero-overlay"></div>
+<div class="hero-contenido">
+<h1>P U F I S M O</h1>
+<p id="hero-parrafo">R#b3li0n</p>
+</div>
+</section>
+<!-- Sección pasarela con texto y video -->
+<section class="pasarela-section">
+<div class="pasarela-texto">
+<h1 class="pasarela-titulo">Nuestra pasarela</h1>
+<p>Paloma Urban Fashion redefine la moda urbana con una visión fresca y atrevida. Inspirados por la autenticidad y el desenfado de la cultura pop española, llevamos la pasarela a las calles, fusionando vanguardia y nostalgia.</p>
+<p>Nuestro desfile más icónico es donde la moda y el humor se mezclan en un espectáculo inolvidable. Revive ese momento en el siguiente video y descubre cómo Paloma Urban Fashion transforma lo cotidiano en tendencia.</p>
+</div>
+<div class="pasarela-video">
+<video src="../video/puf2.mp4" autoplay muted playsinline controls width="500" height="400">Tu navegador no soporta la etiqueta de video.</video>
+</div>
+</section>
+<!-- Catálogo de productos -->
+<section class="productos" id="productos">
+<h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; margin-bottom: 1rem; text-align: center;">Catálogo de Productos</h2>
+<p style="text-align: center; margin-bottom: 2rem">Reserva ahora y te lo ponemos a tu medida</p>
+<div class="productos-grid">
+<div class="producto">
+<img src="../images/marisa1.png" alt="Cazadora Oversize" class="producto-imagen" />
+<div class="producto-detalles">
+<h3 class="producto-titulo">Cazadora Oversize</h3>
+<p class="producto-precio" style="color: #000; font-weight: bold">79,90 €</p>
+<p class="producto-codigo" style="font-weight: bold; color: #555">#REF001</p>
+</div>
+</div>
+<div class="producto">
+<img src="../images/pija1.png" alt="Blusa Kimonay2K" class="producto-imagen" />
+<div class="producto-detalles">
+<h3 class="producto-titulo">Blusa Kimonay2K</h3>
+<p class="producto-precio" style="color: #000; font-weight: bold">59,90 €</p>
+<p class="producto-codigo" style="font-weight: bold; color: #555">#REF002</p>
+</div>
+</div>
+<div class="producto">
+<img src="../images/mariano1.png" alt="Elesuit" class="producto-imagen" />
+<div class="producto-detalles">
+<h3 class="producto-titulo">Elesuit</h3>
+<p class="producto-precio" style="color: #000; font-weight: bold">69,90 €</p>
+<p class="producto-codigo" style="font-weight: bold; color: #555">#REF003</p>
+</div>
+</div>
+<div class="producto">
+<img src="../images/belen1.png" alt="Modo Urban" class="producto-imagen" />
+<div class="producto-detalles">
+<h3 class="producto-titulo">Modo Urban</h3>
+<p class="producto-precio" style="color: #000; font-weight: bold">39,90 €</p>
+<p class="producto-codigo" style="font-weight: bold; color: #555">#REF004</p>
+</div>
+</div>
+<div class="producto">
+<img src="../images/hierbas1.png" alt="Bohopuf" class="producto-imagen" />
+<div class="producto-detalles">
+<h3 class="producto-titulo">Bohopuf</h3>
+<p class="producto-precio" style="color: #000; font-weight: bold">39,90 €</p>
+<p class="producto-codigo" style="font-weight: bold; color: #555">#REF005</p>
+</div>
+</div>
+<div class="producto">
+<img src="../images/vicenta1.png" alt="Traje" class="producto-imagen" />
+<div class="producto-detalles">
+<h3 class="producto-titulo">Traje</h3>
+<p class="producto-precio" style="color: #000; font-weight: bold">39,90 €</p>
+<p class="producto-codigo" style="font-weight: bold; color: #555">#REF006</p>
+</div>
+</div>
+<div class="producto">
+<img src="../images/marianocamiseta.png" alt="Camiseta" class="producto-imagen" />
+<div class="producto-detalles">
+<h3 class="producto-titulo">Camiseta Br4sil</h3>
+<p class="producto-precio" style="color: #000; font-weight: bold">39,90 €</p>
+<p class="producto-codigo" style="font-weight: bold; color: #555">#REF007</p>
+</div>
+</div>
+<div class="producto especial-p">
+<img src="../images/totedarkpuf.png" alt="totedarkpuf" class="producto-imagen" />
+<div class="producto-detalles">
+<h3 class="producto-titulo">Tote Darkpuf</h3>
+<p class="producto-precio" style="color: #000; font-weight: bold">39,90 €</p>
+<p class="producto-codigo" style="font-weight: bold; color: #555">#REF008</p>
+</div>
+</div>
+<div class="producto logo-p">
+<img src="../images/pufdiabla.png" alt="Letra P PUF" class="logo-p-imagen" />
+</div>
+</div>
+</section>
+<!-- Sección contacto con formulario sencillo -->
+<section class="contacto" id="contacto">
+<h2>Contacto</h2>
+<p>Reserva tu prenda favorita de la colección y nos pondremos en contacto contigo y vive el PUF en tu vida, con asesoria de imagen incluida en colaboración con la asesora Ángela Orcera.</p>
+<form>
+<label for="telefono">Teléfono:</label>
+<input type="tel" id="telefono" name="telefono" placeholder="Introduce tu número de teléfono" required />
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Introduce tu mail" required />
+<label for="mensaje">Mensaje:</label>
+<textarea id="mensaje" name="mensaje" placeholder="Escribe referencia favorita para reservar y pedir cita..." required></textarea>
+<button type="submit">Enviar</button>
+</form>
+</section>
+</div>
+</main>
+<script src="js/pufscript.js"></script>
 </body>
-
-<!-- Footer -->
 <footer class="footer">
-  <p>© 2025 PUF. Todos los derechos reservados.</p>
-  <p>Diseñado por Angela Orcera Ruiz</p>
+<!-- Footer con derechos de autor -->
+<p>© 2025 PUF. Todos los derechos reservados.</p>
+<p>Diseñado por Angela Orcera Ruiz</p>
 </footer>
 </html>
 
-
-<p>Diseñado por Angela Orcera Ruiz</p>
-</footer>
 </html>
