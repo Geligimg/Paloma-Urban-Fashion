@@ -396,6 +396,405 @@ h3 {
   object-fit: contain;
   background: #222;
   border-radius: 8px;
+/* Hago un reset global para evitar márgenes y paddings inesperados */
+/* Para asegurarme de que todos los elementos y pseudo-elementos comiencen sin márgenes ni rellenos inesperados, aplico un reset global: */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Defino la fuente y el color base de mi web */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+  background: #fff;
+  color: #111;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h2,h3 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* Centro y limito el ancho del contenido principal */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  width: 100%;
+}
+
+.header-principal {
+  background-color: #fff;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.logo img {
+  max-width: 160px;
+  height: auto;
+}
+
+.nav-enlaces {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-enlaces a {
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-enlaces a:hover {
+  color: #888;
+}
+
+/* Marquee  */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bolder;
+  color: #ff2a2a;
+  font-family: "Doto", sans-serif;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #eee;
+  padding: 0.7rem 0;
+  background: #fff;
+  position: relative;
+}
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 18s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Hero: uso video de fondo y overlay para resaltar el texto */
+.hero {
+  position: relative;
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  border-radius: 12px;
+}
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.6);
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.65) 20%,
+    rgba(0, 0, 0, 0.15) 80%
+  );
+  z-index: 2;
+}
+.hero-contenido {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Doto", sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+#hero-parrafo {
+  font-family: "Doto", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 0.7rem;
+  color: #fff;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* hero de productos */
+.hero {
+  position: relative;
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/memetenpresa.webp");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-contenido {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Botón CTA llamativo y con transición */
+.cta {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.7rem 2.2rem;
+  background-color: #1c1c1c9c;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  transition: background 0.3s, transform 0.3s;
+  border: none;
+  cursor: pointer;
+}
+.cta:hover,
+.cta:focus {
+  background: #000;
+  color: #fff9f9;
+  outline: none;
+}
+
+/* Imagen de colección a ancho completo */
+.coleccion-imagen {
+  width: 100vw;
+  max-width: 100vw;
+  min-width: 100vw;
+  height: auto;
+  display: block;
+  margin: 2rem 0 2rem 50%;
+  transform: translateX(-50%);
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: cover;
+}
+
+/* Títulos y párrafos  */
+.coleccion h2,
+.filosofia h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.2rem;
+  color: #101010;
+  margin-bottom: 1.2rem;
+}
+.coleccion p,
+.filosofia p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #101010;
+}
+/* galeria de la coleccion  */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.galeria-item {
+  width: 100%;
+  height: 300px; 
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+
+.galeria-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Tarjetas flip para misión, visión y valores */
+.tarjetas-mision-vision-valores {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+.tarjeta-giro {
+  background: transparent;
+  width: 320px;
+  height: 270px;
+  perspective: 1000px;
+}
+.tarjeta-giro-interior {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.77, 0, 0.18, 1);
+  transform-style: preserve-3d;
+}
+.tarjeta-giro:hover .tarjeta-giro-interior,
+.tarjeta-giro:focus-within .tarjeta-giro-interior {
+  transform: rotateY(180deg);
+}
+.tarjeta-giro-frente,
+.tarjeta-giro-dorso {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+  padding: 2.2rem 1.5rem;
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+.tarjeta-giro-dorso {
+  flex-direction: column;
+  background: #111;
+  transform: rotateY(180deg);
+  font-size: 1.05rem;
+  overflow: hidden;
+  padding: 2rem 1.2rem;
+}
+.tarjeta-giro-dorso p,
+.tarjeta-giro-dorso ul {
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 90%;
+}
+.tarjeta-giro-dorso ul {
+  list-style: none;
+  padding: 0;
+}
+.tarjeta-giro-dorso li {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.filosofia-imagen {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-ancho {
+  width: 100%;
+  height: auto; 
+  display: block;
+  object-fit: cover; 
+}
+
+.oculto-visually {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+/* Presentación Paloma: uso flex para alinear texto e imagen */
+.presentacion-paloma {
+  display: flex;
+  align-items: stretch;
+  background: #111;
+  color: #fff;
+  padding: 4rem 0;
+  min-height: 60vh;
+  gap: 0;
+  border-radius: 12px;
+}
+.paloma-contenido {
+  flex: 1 1 0;
+  max-width: 700px;
+  margin: 0 auto 0 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.presentacion-paloma h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.paloma-contenido p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+.paloma-foto {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  min-width: 350px;
+}
+.paloma-imagen {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  object-fit: contain;
+  background: #222;
+  border-radius: 8px;
 }
 
 /* Formulario de contacto */
@@ -494,8 +893,8 @@ section.donde-estamos {
 }
 .producto-imagen {
   width: 100%;
-  height: 300px; /* o la altura que uses */
-  object-fit: cover; /* para que la imagen se recorte y no se deforme */
+  height: 300px; 
+  object-fit: cover; 
   display: block;
 }
 .producto-titulo {
