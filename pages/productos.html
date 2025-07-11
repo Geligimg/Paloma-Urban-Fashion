@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Cargo las fuentes que uso en mi web -->
+    <!-- Cargo las fuentes que uso para mantener el estilo -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,7 +30,7 @@
         <a href="../index.html" class="logo">
           <img src="../images/PUF (1).png" alt="Logo PUF" />
         </a>
-        <nav aria-label="Menú principal">
+        <nav>
           <ul class="nav-enlaces">
             <li><a href="../index.html">HOME</a></li>
             <li><a href="../index.html#coleccion">Colección 2K25</a></li>
@@ -42,27 +42,24 @@
         </nav>
       </div>
     </header>
-
-    <!-- Marquee animado para dar dinamismo a la tienda -->
+    <!-- Marquee animado para dar dinamismo -->
     <div class="marquee" aria-hidden="true">
       <span
         ># FASHION | # VANGUARDIA | # BRAT SUMMER NEXT COLLECTION | # ON POINT
         IN MOUTH</span
       >
     </div>
-
     <main>
       <div class="container">
-        <!-- Hero visual para la sección productos -->
-        <section class="hero" id="hero" aria-label="Presentación principal">
+        <!-- Hero visual de presentación -->
+        <section class="hero" id="hero">
           <div class="hero-overlay"></div>
           <div class="hero-contenido">
             <h1>P U F I S M O</h1>
             <p id="hero-parrafo">R#b3li0n</p>
           </div>
         </section>
-
-        <!-- Sección pasarela: presento el espíritu de la marca y muestro un vídeo -->
+        <!-- Sección pasarela con texto y video -->
         <section class="pasarela-section">
           <div class="pasarela-texto">
             <h1 class="pasarela-titulo">Nuestra pasarela</h1>
@@ -93,26 +90,22 @@
             </video>
           </div>
         </section>
-
-        <!-- Catálogo de productos: muestro cada producto con su imagen, nombre, precio y botón -->
-        <section
-          class="productos"
-          id="productos"
-          aria-labelledby="productos-title"
-        >
+        <!-- Catálogo de productos -->
+        <section class="productos" id="productos">
           <h2
-            id="productos-title"
             style="
               font-family: 'Bebas Neue', sans-serif;
               font-size: 2.5rem;
-              margin-bottom: 2rem;
+              margin-bottom: 1rem;
               text-align: center;
             "
           >
             Catálogo de Productos
           </h2>
+          <p style="text-align: center; margin-bottom: 2rem">
+            Reserva ahora y te lo ponemos a tu medida
+          </p>
           <div class="productos-grid">
-            <!-- Producto 1 -->
             <div class="producto">
               <img
                 src="../images/marisa1.png"
@@ -121,11 +114,22 @@
               />
               <div class="producto-detalles">
                 <h3 class="producto-titulo">Cazadora Oversize</h3>
-                <p class="producto-precio">79,90 €</p>
-                <button class="producto-agregar">Agregar al carrito</button>
+                <!-- Precio bien visible -->
+                <p
+                  class="producto-precio"
+                  style="color: #000; font-weight: bold"
+                >
+                  79,90 €
+                </p>
+                <!-- Referencia que he pillado del zara  -->
+                <p
+                  class="producto-codigo"
+                  style="font-weight: bold; color: #555"
+                >
+                  #REF001
+                </p>
               </div>
             </div>
-            <!-- Producto 2 -->
             <div class="producto">
               <img
                 src="../images/pija1.png"
@@ -134,11 +138,20 @@
               />
               <div class="producto-detalles">
                 <h3 class="producto-titulo">Blusa Kimonay2K</h3>
-                <p class="producto-precio">59,90 €</p>
-                <button class="producto-agregar">Agregar al carrito</button>
+                <p
+                  class="producto-precio"
+                  style="color: #000; font-weight: bold"
+                >
+                  59,90 €
+                </p>
+                <p
+                  class="producto-codigo"
+                  style="font-weight: bold; color: #555"
+                >
+                  #REF002
+                </p>
               </div>
             </div>
-            <!-- Producto 3 -->
             <div class="producto">
               <img
                 src="../images/mariano1.png"
@@ -147,11 +160,20 @@
               />
               <div class="producto-detalles">
                 <h3 class="producto-titulo">Elesuit</h3>
-                <p class="producto-precio">69,90 €</p>
-                <button class="producto-agregar">Agregar al carrito</button>
+                <p
+                  class="producto-precio"
+                  style="color: #000; font-weight: bold"
+                >
+                  69,90 €
+                </p>
+                <p
+                  class="producto-codigo"
+                  style="font-weight: bold; color: #555"
+                >
+                  #REF003
+                </p>
               </div>
             </div>
-            <!-- Producto 4 -->
             <div class="producto">
               <img
                 src="../images/belen1.png"
@@ -160,11 +182,20 @@
               />
               <div class="producto-detalles">
                 <h3 class="producto-titulo">Modo Urban</h3>
-                <p class="producto-precio">39,90 €</p>
-                <button class="producto-agregar">Agregar al carrito</button>
+                <p
+                  class="producto-precio"
+                  style="color: #000; font-weight: bold"
+                >
+                  39,90 €
+                </p>
+                <p
+                  class="producto-codigo"
+                  style="font-weight: bold; color: #555"
+                >
+                  #REF004
+                </p>
               </div>
             </div>
-            <!-- Producto 5 -->
             <div class="producto">
               <img
                 src="../images/hierbas1.png"
@@ -173,11 +204,20 @@
               />
               <div class="producto-detalles">
                 <h3 class="producto-titulo">Bohopuf</h3>
-                <p class="producto-precio">39,90 €</p>
-                <button class="producto-agregar">Agregar al carrito</button>
+                <p
+                  class="producto-precio"
+                  style="color: #000; font-weight: bold"
+                >
+                  39,90 €
+                </p>
+                <p
+                  class="producto-codigo"
+                  style="font-weight: bold; color: #555"
+                >
+                  #REF005
+                </p>
               </div>
             </div>
-            <!-- Producto 6 -->
             <div class="producto">
               <img
                 src="../images/vicenta1.png"
@@ -186,11 +226,20 @@
               />
               <div class="producto-detalles">
                 <h3 class="producto-titulo">Traje</h3>
-                <p class="producto-precio">39,90 €</p>
-                <button class="producto-agregar">Agregar al carrito</button>
+                <p
+                  class="producto-precio"
+                  style="color: #000; font-weight: bold"
+                >
+                  39,90 €
+                </p>
+                <p
+                  class="producto-codigo"
+                  style="font-weight: bold; color: #555"
+                >
+                  #REF006
+                </p>
               </div>
             </div>
-            <!-- Producto 7 -->
             <div class="producto">
               <img
                 src="../images/marianocamiseta.png"
@@ -199,11 +248,20 @@
               />
               <div class="producto-detalles">
                 <h3 class="producto-titulo">Camiseta Br4sil</h3>
-                <p class="producto-precio">39,90 €</p>
-                <button class="producto-agregar">Agregar al carrito</button>
+                <p
+                  class="producto-precio"
+                  style="color: #000; font-weight: bold"
+                >
+                  39,90 €
+                </p>
+                <p
+                  class="producto-codigo"
+                  style="font-weight: bold; color: #555"
+                >
+                  #REF007
+                </p>
               </div>
             </div>
-            <!-- Producto especial -->
             <div class="producto especial-p">
               <img
                 src="../images/totedarkpuf.png"
@@ -212,11 +270,20 @@
               />
               <div class="producto-detalles">
                 <h3 class="producto-titulo">Tote Darkpuf</h3>
-                <p class="producto-precio">39,90 €</p>
-                <button class="producto-agregar">Agregar al carrito</button>
+                <p
+                  class="producto-precio"
+                  style="color: #000; font-weight: bold"
+                >
+                  39,90 €
+                </p>
+                <p
+                  class="producto-codigo"
+                  style="font-weight: bold; color: #555"
+                >
+                  #REF008
+                </p>
               </div>
             </div>
-            <!-- Logo especial a la derecha -->
             <div class="producto logo-p">
               <img
                 src="../images/pufdiabla.png"
@@ -226,14 +293,13 @@
             </div>
           </div>
         </section>
-
-        <!-- Sección contacto: formulario claro y accesible para clientes -->
-        <section
-          class="contacto"
-          id="contacto"
-          aria-labelledby="contacto-title"
-        >
-          <h2 id="contacto-title">Contacto</h2>
+        <!-- Sección contacto con formulario sencillo -->
+        <section class="contacto" id="contacto">
+          <h2>Contacto</h2>
+          <p>
+            Reserva tu prenda favorita de la colección y nos pondremos en
+            contacto contigo y vive el PUF en tu vida.
+          </p>
           <form>
             <label for="telefono">Teléfono:</label>
             <input
@@ -263,11 +329,12 @@
         </section>
       </div>
     </main>
-
-    <!-- Footer sencillo con derechos de autor y crédito -->
-    <footer class="footer">
-      <p>© 2024 PUF. Todos los derechos reservados.</p>
-      <p>Diseñado por Paloma Urban Fashion</p>
-    </footer>
+    <script src="js/pufscript.js"></script>
   </body>
+  <footer class="footer">
+    <!-- Footer con derechos de autor -->
+    <p>© 2024 PUF. Todos los derechos reservados.</p>
+    <p>Diseñado por Paloma Urban Fashion</p>
+  </footer>
 </html>
+
