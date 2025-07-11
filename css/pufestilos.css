@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-/* Defino la fuente y el color base de mi web */
+/* fuente y el color base */
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -19,9 +19,6 @@ body {
   line-height: 1.5;
 }
 
-h2,h3 {
-  font-family: "Bebas Neue", sans-serif;
-}
 
 /* Centro y limito el ancho del contenido principal */
 .container {
@@ -133,31 +130,31 @@ h2,h3 {
     90deg,
     rgba(0, 0, 0, 0.65) 20%,
     rgba(0, 0, 0, 0.15) 80%
-  );
-  z-index: 2;
-}
-.hero-contenido {
-  position: relative;
-  z-index: 3;
-  color: #fff;
-  text-align: center;
-  font-size: 2.5rem;
-  font-family: "Doto", sans-serif;
-  letter-spacing: 2px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
-}
-#hero-parrafo {
-  font-family: "Doto", sans-serif;
-  font-size: 1.3rem;
-  margin-top: 0.7rem;
-  color: #fff;
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
-}
-
-/* hero de productos */
-.hero {
-  position: relative;
-  min-height: 65vh;
+    );
+    z-index: 2;
+  }
+  .hero-contenido {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Doto", sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  #hero-parrafo {
+    font-family: "Doto", sans-serif;
+    font-size: 1.3rem;
+    margin-top: 0.7rem;
+    color: #fff;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* hero de productos */
+  .hero {
+    position: relative;
+    min-height: 65vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -474,14 +471,13 @@ section.donde-estamos {
   font-size: 1rem;
 }
 
-/* Catálogo de productos: uso grid adaptable */
+/* Catálogo de productos */
 .productos-grid {
   display: flex;
   flex-direction: row;
   gap: 2rem;
   overflow-x: auto;
   padding-bottom: 1rem;
-  /* Opcional: para que no se vea la barra de scroll en algunos navegadores */
   scrollbar-width: thin;
   scrollbar-color: #434343 #ffffff;
 }
@@ -510,6 +506,9 @@ section.donde-estamos {
   font-family: "Doto", sans-serif;
 }
 
+h2,h3 {
+  font-family: "Bebas Neue", sans-serif;
+}
 /* Sección pasarela: flex para texto y video */
 .pasarela-section {
   display: flex;
@@ -538,12 +537,6 @@ section.donde-estamos {
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
 }
 
-/* Ajusto paddings y disposición en tablets */
-@media (max-width: 1200px) {
-  .container {
-    padding: 0 2rem;
-  }
-}
 
 /* Cambio a columnas y reduzco paddings en móviles */
 @media (max-width: 900px) {
@@ -592,7 +585,6 @@ section.donde-estamos {
   }
 }
 
-/* Media Queries Responsivas */
 
 /* Ajustes en tablets grandes y pantallas medianas */
 @media (max-width: 1024px) {
@@ -673,4 +665,5 @@ section.donde-estamos {
     height: 200px;
   }
 }
+
 
