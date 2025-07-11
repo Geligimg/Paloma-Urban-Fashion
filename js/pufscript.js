@@ -34,7 +34,7 @@ if (formularioContacto) {
       alert("Por favor corrige los siguientes errores:\n\n" + errores.join("\n"));
     } else {
       alert("Muchas gracias por tu mensaje, te respondemos pronto 🤍🎀");
-      // El formulario se enviará q después de la alerta
+      // El formulario se enviará después de la alerta
     }
   });
 }
